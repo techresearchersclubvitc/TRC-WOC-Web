@@ -68,9 +68,10 @@ nav{
   .card:active {
     transform: scale(0.95) rotateZ(1.7deg);
   }
-#navmenu{
-    display: flex;
-    justify-content: space-evenly;
+  #navmenu{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    /* margin-left: 50px; */
 }
 .card a{
     text-decoration: none;
@@ -78,3 +79,23 @@ nav{
     color: white;
     font-family: 'black ops one';
 }
+.card {
+    box-sizing: border-box;
+    width: 200px;
+    height: 60px;
+    background:rgba(0, 0, 0, 0.4);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin: 10px;
+  }
