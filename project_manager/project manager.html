@@ -6,6 +6,7 @@
     <title>Project Admin</title>
     <link rel="stylesheet" href="project_manager.css">
     <link rel="shortcut icon" type="image/x-icon" href="/WOC/icons/WOC_LOGO_FINAL (1).png"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.css" />
     <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
 </head>
@@ -22,13 +23,13 @@
             <a href="/WOC/index.html">HOME</a>
         </div>
         <div class="card">
-            <a href="communitypartners.html">Community Partners</a>
+            <a href="/WOC/Community Partners/community_partners.html">Community Partners</a>
         </div>
         <div class="card projectadmins">
             <a href="/WOC/project_manager/project manager.html">Project Admins</a>
         </div>
         <div class="card">
-            <a href="sponsors.html">Sponsors</a>
+            <a href="/WOC/sponsors/sponsors.html">Sponsors</a>
         </div>
         <div class="card">
             <a href="/WOC/organizers/organizers.html">Organizers</a>
@@ -40,7 +41,9 @@
     <br>
     <div id="division"></div>
     <br><br>
-    <h1 id="page">PROJECT ADMINS</h1>
+    <h1 class="typed-text" id="page"></h1>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
     <br>
     <div id="profile-container">
         <div class="flip-card">
@@ -149,5 +152,12 @@
     <footer>
         <p>&copy; 2023 Tech Researchers Club VIT'C. <br>Made with 🖤️ by Tech Researchers Club VIT'C. All rights reserved.</p>
     </footer>
+    <script>
+        const typed = new Typed('.typed-text', {
+          strings: ['PROJECT ADMINS'],
+          typeSpeed: 100,
+        //   loop: true
+        });
+      </script>
 </body>
 </html>
