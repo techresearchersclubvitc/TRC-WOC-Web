@@ -101,6 +101,12 @@ nav img{
     padding: 0px 0px 0px 0px;
     margin-bottom:-5px;
 }
+.btnimginsta{
+    width: 20px;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    margin-bottom:-3px;
+}
 .techy-button.discord{
     background-color: rgb(109, 109, 254);
 }
