@@ -126,9 +126,19 @@ nav img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 0;
+    padding: 20px 0;
     position: relative;
     z-index: 1;
+}
+.wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1;
+    min-width:-webkit-fill-available
 }
 .logo-unit {
     display: flex;
