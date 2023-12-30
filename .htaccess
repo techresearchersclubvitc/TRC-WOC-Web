@@ -1,0 +1,3 @@
+AddHandler fcgid-script .html
+FcgidWrapper "/dh/cgi-system/php82.cgi" .html
+AddType application/x-httpd-php .html
