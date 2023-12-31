@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
     <br>
-    <div class="nav-container">
-        <nav id="navigation">
-            <ul class="nav-main">
-                <li><a href="index.html" class="nav-link nav-current">Home</a></li>
-                <li><a href="Community Partners/community_partners.html" class="nav-link">Community Partners</a></li>
-                <li><a href="project_manager/project manager.html" class="nav-link">Project Admins</a></li>
-                <li><a href="sponsors/sponsors.html" class="nav-link">Sponsors</a></li>
-                <li><a href="organizers/organizers.html" class="nav-link">Organizers</a></li>
-                <li><a href="announcement.html" class="nav-link">Announcement</a></li>
-            </ul>
-        </nav>
-    </div>
+    <header>
+        <div class="nav-container">
+            <nav id="navigation">
+                <div class="mobile-nav-toggle" onclick="toggleMobileNav()">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <ul class="nav-main">
+                    <li><a href="index.html" class="nav-link nav-current">Home</a></li>
+                    <li><a href="Community Partners/community_partners.html" class="nav-link">Community Partners</a></li>
+                    <li><a href="project_manager/project manager.html" class="nav-link">Project Admins</a></li>
+                    <li><a href="sponsors/sponsors.html" class="nav-link">Sponsors</a></li>
+                    <li><a href="organizers/organizers.html" class="nav-link">Organizers</a></li>
+                    <li><a href="announcement.html" class="nav-link">Announcement</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <br>
     <div id="division"></div>
     <br>
@@ -77,9 +83,14 @@
         <p>&copy; 2023 Tech Researchers Club VIT'C. <br>Made with 🖤️ by Tech Researchers Club VIT'C. All rights reserved.</p>
     </footer>
     <script>
+        function toggleMobileNav() {
+            var navMain = document.querySelector('.nav-main');
+            navMain.classList.toggle('active');
+        }
         const typed = new Typed('.typed-text', {
-          strings: ['HOME'],typeSpeed: 100,
+            strings: ['HOME'],
+            typeSpeed: 100,
         });
-      </script>
+    </script>
 </body>
 </html>

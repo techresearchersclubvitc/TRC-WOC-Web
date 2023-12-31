@@ -87,9 +87,9 @@ a.nav-link.nav-current {
 #woc {
     display: block;
     margin: auto;
-    width: 215px; /* Set the width as needed */
+    width: 195px; /* Set the width as needed */
     height: auto;
-    margin-left:auto;
+    margin-left: auto;
 }
 
 #headd h1 {
@@ -101,6 +101,10 @@ a.nav-link.nav-current {
     width: auto;
     position: relative;
     top: 10px;
+}
+#headd h1,img{
+    font-family: 'black ops one';
+    color: white;
 }
 .card {
     box-sizing: border-box;
@@ -161,10 +165,7 @@ nav img{
     height: 200px;
     width: auto;
 }*/
-#headd h1,img{
-    font-family: 'black ops one';
-    color: white;
-}
+
 /*#headd h1{
     display: inline-flex;
     height: 30px;
@@ -233,6 +234,10 @@ nav img{
 }
 .description{
         font-size: 24px;
+}
+.techy-button:hover {
+    background-color: #6c6c6c;
+    transform: translateY(-5px); /* Lift on hover */
 }
 .wrapper {
     display: flex;
@@ -303,3 +308,152 @@ footer {
 a{
     text-decoration:none;
 }
+
+@media screen and (max-width: 768px) {
+    /* Navigation styling */
+    /*.nav-main {
+        flex-direction: column;
+        align-items: center;
+    }*/
+    .body{
+        background-color:rgb(49, 21, 113);
+        margin: auto;
+    }
+    
+    /* Header styling */
+    #headd {
+        padding: 3vh;
+    }
+    #headd h1 {
+        font-size: 1vh;
+    }
+    #woc{
+        width:15vh;
+    }
+    #h2s{
+        width:75px;
+    }
+    .logo-unit p{
+        font-size: 3vh;
+        font-family: 'black ops one';
+    }
+    .description{
+        font-size: 2vh;
+    }
+    
+    /* Wrapper styling */
+    .wrapper, .wrapper1 {
+        padding: 10px;
+    }
+    /* Button styling */
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Add this media query for smaller screens */
+@media (max-width: 768px) {
+    .nav-main {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px; /* Adjust this based on your header's height */
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none; /* Initially hide the menu */
+        z-index: 1000;
+    }
+
+    .nav-main.active {
+        display: flex; /* Show the menu when active */
+    }
+
+    .nav-main li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .nav-main li a {
+        margin: 0;
+    }
+    
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
+
+/* Add this for consistency */
+.nav-main li {
+    display: inline-block;
+}
+
+/* .mobile-menu {
+    display: none;
+    background-color: #333;
+    padding: 20px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.mobile-menu.show {
+    display: block;
+}
+
+.mobile-menu .nav-main {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mobile-menu .nav-main li {
+    margin-bottom: 15px;
+}
+
+.mobile-menu .nav-main ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.hamburger-icon {
+    display: none; /* Initially hide the hamburger icon on larger screens */
+    /* cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.hamburger-icon .line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff; /* Set the color as needed */
+    /* margin: 6px 0;
+}
+
+/* Media query to show/hide the hamburger icon based on screen width */
+/* @media screen and (max-width: 768px) {
+    .nav-main {
+        display: none; /* Hide the original navigation on small screens */
+    }
+    /* .mobile-menu .nav-main ul li {
+        display: block;
+    }
+
+    .hamburger-icon {
+        display: block; /* Show the hamburger icon on small screens */
+    }
+
+    /* Add this CSS to show the mobile menu based on the "show" class */
+    /* .mobile-menu.show {
+        display: inline-block;
+        align-items:center;
+        justify-content:left;
+    }
+} */ */ */ */ */
