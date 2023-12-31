@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <br>
+    <header>
+        <div class="nav-container">
+            <nav id="navigation">
+                <div class="mobile-nav-toggle" onclick="toggleMobileNav()">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <ul class="nav-main">
+                    <li><a href="index.html" class="nav-link nav-current">Home</a></li>
+                    <li><a href="Community Partners/community_partners.html" class="nav-link">Community Partners</a></li>
+                    <li><a href="project_manager/project manager.html" class="nav-link">Project Admins</a></li>
+                    <li><a href="sponsors/sponsors.html" class="nav-link">Sponsors</a></li>
+                    <li><a href="organizers/organizers.html" class="nav-link">Organizers</a></li>
+                    <li><a href="announcement.html" class="nav-link">Announcement</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <div id="division"></div>
+    <br>
+    <div id="headd">
+        <img src="icons/WOC_LOGO_FINAL.png" alt="" id="woc">
+        <h1 align="center">TRC WINTER OF CODE <br>JOIN US FOR VIT'S FIRST OPEN SOURCE PROGRAM
+        </h1>
+        <img src="icons/H2S_White_Logo.png" alt="" id="h2s">
+    </div>
+    <br>
+    <div id="division"></div>
+    <br><br>
+    <!-- <h1 class="typed-text" id="page" style="white-space:pre;"></h1> -->
+    <div style="text-align:center;">
+     <h1><span class="typed-text" id="page" style="white-space:pre;"></span></h1>
+    </div>
+    <div class="wrapper">
+      <div class="logo-unit">
+          <p class="logo_main">TRC Winter Of Code</p>
+      </div>
+      <p class="description">Squad up and join us for a hackathon from 15th January - 15th February. Build your best idea and win cool prizes, swag or even internships!</p>
+      <div class="buttons">
+          <a href="https://discord.gg/UKGPgzcNDS" target="_blank" rel="noreferrer" id="schedule-view">
+              <div class="techy-button discord">
+                  <span><img src="./icons/discord.svg" alt="Discord" class="btnimg">&nbsp;&nbsp;Join Us On Discord </span>
+              </div>
+          </a>
+          <a href="https://www.instagram.com/techresearchers.vitc?igsh=MXR6cjE0dWRucnM4eg==" target="_blank" rel="noreferrer" id=" apply">
+              <div class="techy-button instagram">
+                  <span><img src="./icons/instagram.svg" alt="Instagram" class="btnimginsta">&nbsp;&nbsp;Follow us on Instagram</span>
+              </div>
+          </a>
+          <a href="https://github.com/techresearchersclubvitc/" target="_blank" rel="noreferrer" id=" apply">
+              <div class="techy-button github">
+                  <img src="./icons/github.svg" alt="Github" class="btnimggithub"><span id="btn">&nbsp;&nbsp;Follow us on Github</span>
+              </div>
+          </a>
+      </div>
+      <div class="wrapper1">
+        <p class="description"> Apply at Hack2Skill Portal and Register Now to Win Exciting prizes !</p> 
+      </div>
+      <div class="wrapper1">
+        <div class="buttons">
+          <a href="https://hack2skill.com/hack/trcvitcwoc" target="_blank" rel="noreferrer" id=" apply">
+              <div class="techy-button apply">
+                  <span><img src="./icons/register.png" alt="Register" class="btnimg">&nbsp;&nbsp;Register Now !!</span>
+              </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script type="text/JavaScript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/JavaScript" src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <footer>
+        <p>&copy; 2023 Tech Researchers Club VIT'C. <br>Made with 🖤️ by Tech Researchers Club VIT'C. All rights reserved.</p>
+    </footer>
+    <script type="text/JavaScript">
+        function toggleMobileNav() {
+            var navMain = document.querySelector('.nav-main');
+            navMain.classList.toggle('active');
+        }
+        const typed = new Typed('.typed-text', {
+            strings: ['HOME'],
+            typeSpeed: 100,
+        });
+    </script>
+</body>
+</html>
