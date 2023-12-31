@@ -77,12 +77,12 @@
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script type="text/JavaScript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/JavaScript" src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
     <footer>
         <p>&copy; 2023 Tech Researchers Club VIT'C. <br>Made with 🖤️ by Tech Researchers Club VIT'C. All rights reserved.</p>
     </footer>
-    <script>
+    <script type="text/JavaScript">
         function toggleMobileNav() {
             var navMain = document.querySelector('.nav-main');
             navMain.classList.toggle('active');
