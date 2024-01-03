@@ -6,15 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
-    <script src="rss.global.min.js"></script>
-    <script>
-      window.onload = function() {
-        new RSS(
-          document.querySelector("#rss-feeds"),
-          "https://trcwoc.blogspot.com/feeds/posts/default?alt=rss"
-        ).render();
-      };
-    </script>
 </head>
 <body>
     <br>
@@ -44,7 +35,23 @@
     <div style="text-align:center;">
         <h1><span class="typed-text" id="page" style="white-space:pre;"></span></h1>
     </div>
-    <div id="rss-feeds"></div>
+    <div id="widgetmain" style="text-align: center; overflow-y: auto; overflow-x: hidden; width: --webkit-fill-available; background-color: #transparent; border: 0px solid #000000;">
+        <div id="rsswidget" style="height: --webkit-fill-available;">
+            <iframe
+                src="/getrss.php?time=1703923494432&amp;x=https%3A%2F%2Fcbseclass10studymaterial.blogspot.com%2Ffeeds%2Fposts%2Fdefault%3Falt%3Drss&amp;w=500&amp;h=500&amp;bc=000000&amp;bw=1&amp;bgc=transparent&amp;m=20&amp;it=false&amp;t=(default)&amp;tc=333333&amp;ts=19&amp;tb=transparent&amp;il=true&amp;lc=FFFFFF&amp;ls=14&amp;lb=true&amp;id=false&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=9FE3DE&amp;dts=12"
+                border="0"
+                hspace="0"
+                vspace="0"
+                frameborder="no"
+                marginwidth="0"
+                marginheight="0"
+                style="border: 0; padding: 0; margin: 0; width: 500px; height: 500px;"
+                id="rssOutput"
+            >
+                Reading RSS Feed ...
+            </iframe>
+        </div>
+    </div>
     <br>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
