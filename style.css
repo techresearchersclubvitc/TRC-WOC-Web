@@ -269,6 +269,7 @@ nav img{
     margin:0 100px;
 }
 .tbtn{
+    margin-left: 5vh;
     padding-bottom:10px
 }
 p{
@@ -441,7 +442,5 @@ a{
         align-items: center;
         justify-content:center;
         padding: 0 0 0 0;
-    }
-    
-    }
+    } 
 }
