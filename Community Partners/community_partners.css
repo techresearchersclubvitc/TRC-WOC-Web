@@ -17,148 +17,86 @@ li{
     list-style-type: none;
 }
 nav{
-    display: flex;
-    justify-content: space-between;
-}
-li{
-    list-style-type: none;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .nav-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: rgba(0, 0, 0, 0.8); 
-    z-index: 1000;
-     */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5vh;
+  margin-bottom: -2vh;
 }
 a.nav-link{
-    font-size:larger;
+  font-size:larger;
 }
 .nav-main {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position:sticky;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position:sticky;
 }
 
 .nav-main li a {
-    text-decoration: none;
-    color: white;
-    padding: 8px 19px;
-    border-radius: 10px;
-    margin: 0 20px;
-    transition: transform 0.3s ease;
+  text-decoration: none;
+  color: white;
+  padding: 8px 19px;
+  border-radius: 10px;
+  margin: 0 20px;
+  transition: transform 0.3s ease;
 }
 
 .nav-main li a:hover {
-    color: black;
-    background-color: white;
-    font-weight: 600;
-    transform: translateY(-5px); /* Lift on hover */
+  color: black;
+  background-color: white;
+  font-weight: 600;
+  transform: translateY(-5px);
 }
 .nav-current{
-    font-color: black;
-    background-color: white;
-    font-weight: 600;
+  background-color: white;
+  font-weight: 600;
 }
 a.nav-link.nav-current {
-    color: black;
-    font-weight: 600;
+  color: black;
+  font-weight: 600;
 }
 #headd {
-    display: flex;
-    flex-direction: row; /* Set to "row" for a horizontal layout */
-    justify-content: space-between; /* Center the items horizontally */
-    align-items: center; /* Center the items vertically */
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center; 
 }
 
 #h2s {
-    display: block;
-    margin: auto;
-    width: 150px; /* Set the width as needed */
-    height: auto;
-    margin-right:auto;
+  display: block;
+  margin: auto;
+  width: 150px; 
+  height: auto;
+  margin-right:auto;
 }
 #woc {
-    display: block;
-    margin: auto;
-    width: 215px; /* Set the width as needed */
-    height: auto;
-    margin-left:auto;
+  display: block;
+  margin: auto;
+  width: 195px; 
+  height: auto;
+  margin-left: auto;
 }
 
 #headd h1 {
-    text-align: center;
-    color: #333;
-    margin-left: -30px;
-    display: inline-flex;
-    height: auto;
-    width: auto;
-    position: relative;
-    top: 10px;
+  text-align: center;
+  color: #333;
+  margin-left: -30px;
+  display: inline-flex;
+  height: auto;
+  width: auto;
+  position: relative;
+  top: 10px;
 }
 #headd h1,img{
-    font-family: 'black ops one';
-    color: white;
+  font-family: 'black ops one';
+  color: white;
 }
-.card {
-    box-sizing: border-box;
-    width: 200px;
-    height: 60px;
-    background:rgba(0, 0, 0, 0.4);
-    border: 1px solid white;
-    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(6px);
-    border-radius: 17px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    font-weight: bolder;
-    color: black;
-    margin: 10px;
-  }
-  
-  .card:hover {
-    border: 1px solid black;
-    transform: scale(1);
-  }
-  
-  .card:active {
-    transform: scale(1) rotateZ(1.7deg);
-  }
-#navmenu{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    /* margin-left: 50px; */
-}
-.card a{
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    font-family: 'black ops one';
-}
-/* html {
-    scroll-behavior: smooth;
-} */
-
 #page{
     text-align: center;
     color: white;
@@ -296,51 +234,77 @@ a.nav-link.nav-current {
     display: grid;
     grid-template-columns: repeat(2,2fr);
   }
-  #navmenu{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    /* margin-left: 100px; */
-    margin: 25px 0px 25px 0px;
-  }
-  nav h1{
-    font-size: 18px;
-  }
   #profile-container{
     margin-top: 20px;
   }
   .flip-card{
     margin-bottom: 20px;
   }
-  #h2s{
-    width: 110px;
-    margin-left: 41px;
+  .nav-main {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 1000;
+  }
+  .nav-main.active {
+      display: flex;
+  }
+  .nav-main li {
+      text-align: center;
+      margin: 10px 0;
+  }
+  .nav-main li a {
+      margin: 0;
+  }
+  .mobile-nav-toggle {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+  }
+  #headd {
+    padding: 2vh;
+  }
+  #headd h1 {
+      font-size: 2vh;
   }
   #woc{
-    width: 140px;
-    height: 140px;
-    position: relative;
-    /* top: 30px; */
+      width:16vh;
+  }
+  #h2s{
+      width:90px;
   }
   footer{
     font-size: 14px;
   }
+}
+.nav-main li {
+  display: inline-block;
 }
 @media only screen and (max-width: 663px) {
   #profile-container{
     display: grid;
     grid-template-columns: repeat(1,2fr);
   }
-  #navmenu{
-    display: grid;
-    grid-template-columns: repeat(2,10fr);
-    margin-left: 100px;
-    margin-top: 5%;
+  #headd {
+    padding: 3vh;
   }
-  nav>h1{
-    font-size: 14px;
+  #headd h1 {
+      font-size: 1vh;
   }
-  #headd h1{
-    font-size: 14px;
+  #woc{
+      width:15vh;
+  }
+  #h2s{
+      width:75px;
   }
   .flip-card{
     margin-bottom: 20px;
@@ -350,22 +314,8 @@ a.nav-link.nav-current {
     position: relative;
     margin-left: -110px;
   }
-  #h2s{
-    width: 50px;
-    height: 20px;
-    margin-left: 30px;
-  }
-  #woc{
-    width: 120px;
-    height: 120px;
-    position: relative;
-    ;
-  }
   footer{
     font-size: 14px;
-  }
-  #navmenu>.card>a{
-    font-size: 12px;
   }
   .card{
     width: 150px;
@@ -376,24 +326,18 @@ a.nav-link.nav-current {
   .body{
         background-color:rgb(49, 21, 113);
         margin: auto;
-    
-    }
-  .nav-container{
-        margin:20px auto;
-        padding:0 0;
-    }
-  .nav-socials{
-        display: none;
-    }
-  .nav-main{
-        margin:auto;
-        font-size: 9.5px;
-    }
-  nav>h1{
-    font-size: 10px;
+      }
+  #headd {
+      padding: 3vh;
   }
-  #headd h1{
-    font-size: 14px;
+  #headd h1 {
+      font-size: 1vh;
+  }
+  #woc{
+      width:15vh;
+  }
+  #h2s{
+      width:75px;
   }
   #page{
     font-size: 12px;
@@ -401,5 +345,4 @@ a.nav-link.nav-current {
   footer{
     font-size: 10px;
   }
-  
 }
