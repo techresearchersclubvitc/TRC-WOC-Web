@@ -251,6 +251,9 @@ a{
     .description{
         font-size: 2vh;
     }
+    .fa{
+        display: inline-block;
+    }
     .wrapper, .wrapper1 {
         padding: 10px;
     }
@@ -306,6 +309,9 @@ a{
     .body{
         background-color:rgb(49, 21, 113);
         margin: auto;
+    }
+    .fa{
+        display: inline-block;
     }
     #headd {
         padding: 2vh;
