@@ -23,17 +23,6 @@ nav{
     justify-content: center;
     align-items: center;
     margin-top: auto;
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: rgba(0, 0, 0, 0.8); 
-    z-index: 1000;
-     */
 }
 a.nav-link{
     font-size:larger;
@@ -59,10 +48,9 @@ a.nav-link{
     color: black;
     background-color: white;
     font-weight: 600;
-    transform: translateY(-5px); /* Lift on hover */
+    transform: translateY(-5px);
 }
 .nav-current{
-    font-color: black;
     background-color: white;
     font-weight: 600;
 }
@@ -72,22 +60,22 @@ a.nav-link.nav-current {
 }
 #headd {
     display: flex;
-    flex-direction: row; /* Set to "row" for a horizontal layout */
-    justify-content: space-between; /* Center the items horizontally */
-    align-items: center; /* Center the items vertically */
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center; 
 }
 
 #h2s {
     display: block;
     margin: auto;
-    width: 150px; /* Set the width as needed */
+    width: 150px; 
     height: auto;
     margin-right:auto;
 }
 #woc {
     display: block;
     margin: auto;
-    width: 195px; /* Set the width as needed */
+    width: 195px; 
     height: auto;
     margin-left: auto;
 }
@@ -106,85 +94,10 @@ a.nav-link.nav-current {
     font-family: 'black ops one';
     color: white;
 }
-.card {
-    box-sizing: border-box;
-    width: 200px;
-    height: 60px;
-    background:rgba(0, 0, 0, 0.4);
-    border: 1px solid white;
-    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(6px);
-    border-radius: 17px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    font-weight: bolder;
-    color: black;
-    margin: 10px;
-  }
-  
-  .card:hover {
-    border: 1px solid black;
-    transform: scale(1);
-  }
-  
-  .card:active {
-    transform: scale(1) rotateZ(1.7deg);
-  }
-#navmenu{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    /* margin-left: 50px; */
-}
-.card a{
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    font-family: 'black ops one';
-}
+
 html {
     scroll-behavior: smooth;
 }
-/*nav h1,img{
-    font-family: 'black ops one';
-    color: white;
-}
-nav h1{
-    display: inline-flex;
-    height: 30px;
-    width: auto;
-    position: relative;
-    top: 60px;
-}
-nav img{
-    display: inline;
-    height: 200px;
-    width: auto;
-}*/
-
-/*#headd h1{
-    display: inline-flex;
-    height: 30px;
-    width: auto;
-    position: relative;
-    top: 60px;
-}
-#headd img{
-    display: inline;
-    height: 200px;
-    width: auto;
-}
-#h2s{
-    position: relative;
-    top: 75px;
-    display: inline;
-    width: 125px;
-    height: 50px;
-}*/
 #page{
     text-align: center;
     color: white;
@@ -237,7 +150,7 @@ nav img{
 }
 .techy-button:hover {
     background-color: #6c6c6c;
-    transform: translateY(-5px); /* Lift on hover */
+    transform: translateY(-5px);
 }
 .wrapper {
     display: flex;
@@ -293,7 +206,7 @@ p{
 }
 .techy-button:hover {
     background-color: #6c6c6c;
-    transform: translateY(-5px); /* Lift on hover */
+    transform: translateY(-5px);
 }
 #division{
     position: relative;
@@ -315,17 +228,10 @@ a{
 }
 
 @media screen and (max-width: 716px) {
-    /* Navigation styling */
-    /*.nav-main {
-        flex-direction: column;
-        align-items: center;
-    }*/
     .body{
         background-color:rgb(49, 21, 113);
         margin: auto;
     }
-    
-    /* Header styling */
     #headd {
         padding: 3vh;
     }
@@ -345,12 +251,9 @@ a{
     .description{
         font-size: 2vh;
     }
-    
-    /* Wrapper styling */
     .wrapper, .wrapper1 {
         padding: 10px;
     }
-    /* Button styling */
     .buttons {
         display:flex;
         flex-direction: column;
@@ -400,17 +303,10 @@ a{
     display: inline-block;
 }
 @media screen and (max-width: 1112px) {
-    /* Navigation styling */
-    /*.nav-main {
-        flex-direction: column;
-        align-items: center;
-    }*/
     .body{
         background-color:rgb(49, 21, 113);
         margin: auto;
     }
-    
-    /* Header styling */
     #headd {
         padding: 2vh;
     }
@@ -430,12 +326,9 @@ a{
     .description{
         font-size: 2vh;
     }
-    
-    /* Wrapper styling */
     .wrapper, .wrapper1 {
         padding: 10px;
     }
-    /* Button styling */
     .buttons {
         display:flex;
         flex-direction: column;
