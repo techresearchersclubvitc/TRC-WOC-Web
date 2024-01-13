@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Titillium+Web:ital@1&display=swap');
 *{
   padding: 0;
-  margin: 0 0 10px 0;
+  margin-top:1px;
 }
 body{   
     font-family: 'Titillium Web';
@@ -13,91 +13,6 @@ body{
     position: relative;
     overflow-x: hidden;
 }
-li{
-    list-style-type: none;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-}
-.card {
-    box-sizing: border-box;
-    width: 200px;
-    height: 60px;
-    background:rgba(0, 0, 0, 0.4);
-    border: 1px solid white;
-    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(6px);
-    border-radius: 17px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    font-weight: bolder;
-    color: black;
-    margin: 10px;
-  }
-  
-  .card:hover {
-    border: 1px solid black;
-    transform: scale(1);
-  }
-  
-  .card:active {
-    transform: scale(1) rotateZ(1.7deg);
-  }
-#navmenu{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    /* margin-left: 50px; */
-}
-.card a{
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    font-family: 'black ops one';
-}
-/* html {
-    scroll-behavior: smooth;
-} */
-nav{
-    display: flex;
-    justify-content: space-evenly;
-}
-nav h1,img{
-    font-family: 'black ops one';
-    color: white;
-}
-nav h1{
-    display: inline-flex;
-    height: 30px;
-    width: auto;
-    position: relative;
-    top: 60px;
-}
-nav img{
-    display: inline;
-    height: 200px;
-    width: auto;
-}
-#h2s{
-    position: relative;
-    top: 75px;
-    display: inline;
-    width: 100px;
-    height: 50px;
-}
-#page{
-    text-align: center;
-    color: white;
-    font-family: 'black ops one';
-    font-weight: lighter;
-    font-size: 25px;
-    text-decoration: underline solid 3px;
-}
 #division{
     position: relative;
     top: 10px;
@@ -108,9 +23,7 @@ nav img{
 #profile-container{
     display: grid;
     position: relative;
-    top: 10px;
-    left: 50px;
-    /* right: auto; */
+    justify-items: center;
     grid-template-columns: repeat(3,1fr);
 }
 .flip-card {
@@ -227,30 +140,11 @@ nav img{
     display: grid;
     grid-template-columns: repeat(2,2fr);
   }
-  #navmenu{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    /* margin-left: 100px; */
-    margin: 25px 0px 25px 0px;
-  }
-  nav h1{
-    font-size: 18px;
-  }
   #profile-container{
     margin-top: 20px;
   }
   .flip-card{
     margin-bottom: 20px;
-  }
-  #h2s{
-    width: 90px;
-    margin-left: 40px;
-  }
-  #woc{
-    width: 140px;
-    height: 140px;
-    position: relative;
-    top: 30px;
   }
   footer{
     font-size: 14px;
@@ -264,15 +158,6 @@ nav img{
     display: grid;
     grid-template-columns: repeat(1,2fr);
   }
-  #navmenu{
-    display: grid;
-    grid-template-columns: repeat(2,10fr);
-    margin-left: 100px;
-    margin-top: 5%;
-  }
-  nav>h1{
-    font-size: 14px;
-  }
   .flip-card{
     margin-bottom: 20px;
     display: flex;
@@ -281,22 +166,8 @@ nav img{
     position: relative;
     margin-left: -110px;
   }
-  #h2s{
-    width: 50px;
-    height: 20px;
-    margin-left: 30px;
-  }
-  #woc{
-    width: 120px;
-    height: 120px;
-    position: relative;
-    top: 25px;
-  }
   footer{
     font-size: 14px;
-  }
-  #navmenu>.card>a{
-    font-size: 12px;
   }
   .card{
     width: 150px;
@@ -307,16 +178,6 @@ nav img{
   body{
     width: 80vw;
   }
-  #navmenu{
-    display: grid;
-    grid-template-columns: repeat(1,10fr);
-    margin-left: 80px;
-    margin-top: 35px;
-    margin-bottom: 30px;
-  }
-  nav>h1{
-    font-size: 10px;
-  }
   #page{
     font-size: 12px;
   }
@@ -324,4 +185,12 @@ nav img{
     font-size: 10px;
   }
   
+}
+#page{
+  text-align: center;
+  color: white;
+  font-family: 'black ops one';
+  font-weight: lighter;
+  font-size: 25px;
+  text-decoration: underline solid 3px;
 }
