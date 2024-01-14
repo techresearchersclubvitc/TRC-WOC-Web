@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteRule ^community_partners.html$ community_partners
+RewriteRule ^index.html$ home
+RewriteRule ^project_manager.html$ project_manager
+RewriteRule ^sponsors.html$ sponsors
+RewriteRule ^announcement.html$ announcement
